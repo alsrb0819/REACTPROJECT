@@ -26,18 +26,18 @@ const render = () => {
     const state = store.getState();     // 현재 store의 상태를 state에 담음
     ReactDOM.render(
         <Provider store={store}>
-            {state.dashReducer.startPrj === 'true' ? (  // 1. getItem이라서 상태는 false이다
+            {state.dashReducer.startPrj === 'true' ? (  // 1. getItem이라서 상태는 false이다    2. 시작하기를 누르면 true로 바뀐다.
                 <ThemeProvider theme={Themes.default}>
                     <ThemeSwitcherProvider
                         lightTheme={Themes.default}
-                        darkTheme={Themes.darkTheme}
+                        darkTheme={Themes.darkTheme}    // 2. true이므로 여기가 실행이 된다.
                         defaultTheme={'light'}
                     >
                         <AppContainer />
                     </ThemeSwitcherProvider>
                 </ThemeProvider>
             ) : (
-                <Dashboard />   // false라서 여기가 보이는 것이다. (comm->page->dashboard)
+                <Dashboard />   // 1. false라서 여기가 보이는 것이다. (comm->page->dashboard)
             )}
         </Provider>,
 

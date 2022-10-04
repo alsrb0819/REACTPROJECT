@@ -123,7 +123,7 @@ function App() {
             <div className="frame">
                 <h1 className="frame__title">72th REACT PROJECT</h1>
                 <div className="frame__links">
-                    <BrowserRouter>
+                    <BrowserRouter>     {/*BrowserRouter로 이동 (App.js에 있음) */}
                         <Link
                             className="frame__link"
                             to="/"
