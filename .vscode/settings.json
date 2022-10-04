@@ -1,0 +1,29 @@
+{
+    "prettier.printWidth": 120,
+        "files.exclude": {
+            "**/.git": true,         // this is a default value
+            "**/.DS_Store": true,    // this is a default value
+
+            "**/node_modules": true, // this excludes all folders 
+                                    // named "node_modules" from 
+                                    // the explore tree
+
+            // alternative version
+            "node_modules": true    // this excludes the folder 
+                                    // only from the root of
+                                    // your workspace 
+        },
+        "svn.delete.ignoredRulesForDeletedFiles": [
+            "src\\erp\\hr\\util\\CSS",
+            "src\\erp\\hr\\util\\HrAppBar.js",
+            "src\\erp\\hr\\util\\MyCalendar.js",
+            "src\\erp\\hr\\util\\MyGrid.js",
+            "src\\erp\\hr\\util\\MySelect.js",
+            "src\\erp\\hr\\util\\Selector",
+            "src\\erp\\hr\\util\\UseStyles.js",
+            "src\\erp\\hr\\util\\api.js",
+            "src\\erp\\hr\\util\\datePicker.js",
+            "src\\erp\\hr\\util\\lib.js",
+            "src\\erp\\hr\\util\\useMonth.js"
+        ]
+}
